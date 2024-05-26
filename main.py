@@ -156,7 +156,6 @@ while running:
             level_counter(level)
             pl_y += speed_y/4
             clock.tick(10)
-        # print(pl_x // speed_x + (pl_y//speed_y - 2)*20)
         if (pl_x // speed_x + (pl_y//speed_y - 2)*20) in fire_area: #Проверка на попадание в огонь
             life_counter-=1
             fire_area.remove(pl_x // speed_x + (pl_y//speed_y - 2)*20)
